@@ -22,7 +22,7 @@ using Statistics
                yaxis := false
                grid := false
                #yticks := false
-               yticks := (Δ*cover*[1, n_sig], string.(n_init .+ [0, n_sig - 1]))
+               yticks := (Δ*[1, n_sig], string.(n_init .+ [0, n_sig - 1]))
            t, y
            end
        end
