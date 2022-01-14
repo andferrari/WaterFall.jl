@@ -6,8 +6,7 @@ pkg> add https://github.com/andferrari/WaterFall.jl
 and
 ```julia
 using WaterFall
-t = [n - τ for n in -100:100, τ in -50:5:50]
-x = @. exp(-t^2/10)*sin(2*π*0.1*t)
-plotfall(x)
+x = [exp(-(n - 1e-2*τ^2)^2/τ)  for n in 0:300, τ in 40:10:160]
+plotfall(x, w=2, dpi=300)
 ```
-<img src="https://user-images.githubusercontent.com/8927904/149405910-5f054f17-741b-4327-8b6a-a651c25ed825.png" width="600">
+<img src="https://user-images.githubusercontent.com/8927904/149500543-dbe084a4-ab63-4bdc-8822-88dc9827cfce.png" width="600">
