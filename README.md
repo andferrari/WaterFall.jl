@@ -1,5 +1,5 @@
 Simple [Plots.jl](https://github.com/JuliaPlots/Plots.jl) receipe for waterfall plots 
-(a la [Unknown Pleasures](https://fr.wikipedia.org/wiki/Unknown_Pleasures)). Install using:
+(a la [Unknown Pleasures](https://en.wikipedia.org/wiki/Unknown_Pleasures)). Install using:
 ```julia
 pkg> add https://github.com/andferrari/WaterFall.jl
 ```
