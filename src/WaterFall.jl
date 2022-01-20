@@ -6,8 +6,8 @@ using Statistics
 
 @userplot PlotFall
 @recipe function f(in::PlotFall; cover=0.5, n_init = 1, Δ = nothing)
-           y = length(in.args) == 1 ? in.args[1] : in.args[2]
-           t = length(in.args) == 2 ? in.args[1] : 1:size(y)[1]
+           y = copy(length(in.args) == 1 ? in.args[1] : in.args[2])
+           t = copy(length(in.args) == 2 ? in.args[1] : 1:size(y)[1])
 
            n_sig = size(y)[2]
            if isnothing(Δ)
